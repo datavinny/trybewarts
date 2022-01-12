@@ -1,8 +1,8 @@
 // Requisito 3
 const entrarBtn = document.getElementById('login');
 function checkLogin() {
-const emailInputValue = document.getElementById('email').value;
-const passwordInputValue = document.getElementById('senha').value;
+  const emailInputValue = document.getElementById('email').value;
+  const passwordInputValue = document.getElementById('senha').value;
   if (emailInputValue === 'tryber@teste.com' && passwordInputValue === '123456') {
     alert('Olá, Tryber!');
   } else {
@@ -36,20 +36,20 @@ function countTextArea() {
 countTextArea();
 textArea.addEventListener('keyup', countTextArea);
 
-//Requisito 21
+// Requisito 21
+const nome = document.getElementById('input-name').value;
+const sobrenome = document.getElementById('input-lastname').value;
+const email = document.getElementById('input-email').value;
+const familia = document.querySelector('.family:checked').value;
+const casa = document.getElementById('house').value;
+const materias = document.querySelectorAll('.subject:checked');
+const avaliacao = document.querySelector('.rate:checked').value;
+const observacao = document.getElementById('textarea').value;
 function sendForm(e) {
   e.preventDefault();
-  const nome = document.getElementById('input-name').value;
-  const sobrenome = document.getElementById('input-lastname').value;
-  const email = document.getElementById('input-email').value;
-  const familia = document.querySelector('.family:checked').value;
-  const casa = document.getElementById('house').value;
-  const materias = document.querySelectorAll('.subject:checked');
-  const avaliacao = document.querySelector('.rate:checked').value;
-  const observacao = document.getElementById('textarea').value;
-  let materiasSelection = []
-  for (let i=0; i<materias.length; i+=1) {
-    materiasSelection.push(materias[i].value)
+  const materiasSelection = [];
+  for (let i = 0; i < materias.length; i += 1) {
+    materiasSelection.push(materias[i].value);
   }
   materiasSelection = materiasSelection.join(', ')
   const theForm = document.getElementById('evaluation-form');
@@ -59,6 +59,6 @@ function sendForm(e) {
   <p>Família: ${familia}</p>
   <p>Matérias: ${materiasSelection}</p>
   <p>Avaliação: ${avaliacao}</p>
-  <p>Observações: ${observacao}</p>`
+  <p>Observações: ${observacao}</p>`;
 }
 enviarBtn.addEventListener('click', sendForm);
