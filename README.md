@@ -1,7 +1,7 @@
 # Boas vindas ao repositório do projeto Trybewarts Wizarding School! :mage:
 
 # Contexto
-Este projeto foi feito enquanto/para, etc.
+Este projeto foi feito enquanto eu estudava na @betrybe.
 
 ## Técnologias usadas
 
