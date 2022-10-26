@@ -17,12 +17,6 @@ Neste projeto, foi testado habilidades de:
 * Criar regras CSS específicas para serem aplicadas a dispositivos móveis;
 * Construir páginas que alteram o seu layout de acordo com a orientação da tela;
 
-### Data de entrega
-
-- Projeto em dupla;
-- Foram `1` dias de projeto;
-- Data de entrega do projeto: `11/01/2022 - 21:23h`
-
 ## Creditos
 - Eu (@datavinny) 
 - Allan (@gitdoallan)
